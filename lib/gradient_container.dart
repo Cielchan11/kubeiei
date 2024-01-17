@@ -11,8 +11,8 @@ class GContainer extends StatelessWidget{
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(colors: [
-          Color.fromARGB(255, 224, 70, 70),
-          Color.fromARGB(255, 221, 199, 126)
+          Color.fromARGB(255, 243, 100, 100),
+          Color.fromARGB(255, 133, 240, 213)
         ],
         begin: Alignment.topRight, end:Alignment.bottomLeft)),
         child: Center(
