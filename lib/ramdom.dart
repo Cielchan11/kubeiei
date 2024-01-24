@@ -1,19 +1,20 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:ze4/stylet.dart';
-class Random extends StatefulWidget{
-  const Random({super.key});
 
-  State<Random> createState(){
+class Randoms extends StatefulWidget{
+  const Randoms({super.key});
+
+  State<Randoms> createState(){
 
     return _RandomAction();
   }
 }
 
-class _RandomAction extends State<Random>{
+class _RandomAction extends State<Randoms>{
 
     var luktao = '/image/dice-5.png';
-    final randoms = Random();
+    final Random randomss = new Random();
     var number = 1;
 
   Widget build(context){
@@ -30,7 +31,7 @@ class _RandomAction extends State<Random>{
             TextButton(
               onPressed: () {
                 setState(() {
-                  number = randoms.nextInt(6) + 1;
+                  number = randomss.nextInt(6) + 1;
                   luktao = '/image/dice-$number.png';
                 });
               },

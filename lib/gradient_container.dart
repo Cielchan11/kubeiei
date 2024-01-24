@@ -15,6 +15,6 @@ class GContainer extends StatelessWidget{
         ],
         begin: Alignment.topRight, end:Alignment.bottomLeft)),
         child: Center(
-            child: Random()));
+            child: Randoms()));
     }
   }  
